@@ -8,3 +8,64 @@
  *= require_self
  *= require_tree .
 */
+
+#header {
+  background: white !important;
+}
+
+#top-nav-bar {
+  position: sticky !important;
+  top: 50%;
+}
+
+#spree-header {
+  background: #ddc2f5 !important;
+}
+
+
+.user-nav > li > a {
+  color: #333333 !important;
+  font-weight: bold;
+}
+
+.user-nav > li > a:hover {
+  background: #ddc2f5 !important;
+  color: #ffffff !important;
+}
+
+.btn-success {
+  background: #bd95e2 !important;
+  padding: 7px 12px;
+  border: none;
+}
+
+#main-nav-bar {
+  font-weight: bold;
+}
+
+
+#main-nav-bar > ul > li > a:hover {
+  background: #bd95e2 !important;
+}
+
+.pagination > li > a {
+  color: #bd95e2 !important;
+}
+
+.pagination > .active > a {
+  background: #bd95e2 !important;
+  color: #ffffff !important;
+  border-color: #bd95e2 !important;
+}
+
+.alert-notice, .alert-success {
+  background: #ddc2f5 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+#logo { margin: 0 auto }
+
+#logo > a > img {
+  max-height: 300px !important;
+}
