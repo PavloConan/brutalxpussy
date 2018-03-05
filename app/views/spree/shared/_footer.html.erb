@@ -1,0 +1,26 @@
+<footer id="main-footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div id="link-blocks" class="row">
+        <div class="link-block six columns">
+          <h3 class="block-title">INFO</h3>
+          <%= link_to I18n.t('spree.rules'), static_path('regulamin'), class: 'static-link'%>
+          <%= link_to I18n.t('spree.payments'), static_path('platnosc-i-wysylka'), class: 'static-link'%>
+          <%= link_to I18n.t('spree.returns'), static_path('zwroty'), class: 'static-link'%>
+          <%= link_to I18n.t('spree.faq'), static_path('faq'), class: 'static-link'%>
+          <%= link_to I18n.t('spree.contact'), static_path('kontakt'), class: 'static-link'%>
+          <%= link_to I18n.t('spree.cookies'), static_path('ciastka'), class: 'static-link'%>
+        </div>
+        <div class="social-media">
+          <h3 class="block-title"><%= I18n.t('spree.find_us') %></h3>
+          <%= link_to image_tag('insta-icon.png'), 'https://www.instagram.com/brutalxpuss_shop/', target: 'blank'%>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+    <%= "©#{Time.current.year} BRUTALXPUSSY. ALL RIGHTS RESERVED." %>
+  </div>
+</div>

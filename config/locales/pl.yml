@@ -2,3 +2,11 @@ pl:
   spree:
     login: 'Logowanie / Rejestracja'
     latest: 'NOWOŚCI'
+    rules: 'REGULAMIN'
+    payments: 'PŁATNOŚĆ I WYSYŁKA'
+    returns: 'ZWROTY'
+    faq: 'FAQ'
+    contact: 'KONTAKT'
+    cookies: 'COOKIES'
+    find_us: 'NASZ INSTA'
+    copyright: 'Brutalxpussy 2018 Wszystkie prawa zaszczerzone'

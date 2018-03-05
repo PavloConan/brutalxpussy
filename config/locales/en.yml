@@ -33,3 +33,11 @@ en:
   spree:
     login: 'LOGIN / REGISTER'
     latest: 'NEW IN'
+    rules: 'TERMS AND RULES'
+    payments: 'PAYMENT AND SHIPPING'
+    returns: 'RETURN'
+    faq: 'FAQ'
+    contact: 'CONTACT'
+    cookies: 'COOKIES'
+    find_us: 'INSTAGRAM'
+    copyright: 'Brutalxpussy 2018 All rights reserved'

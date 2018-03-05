@@ -10,6 +10,26 @@
  *= require spree/frontend/spree_static_content
 */
 
+.footer-bottom {
+  background: #855daa;
+  margin-top: 100px;
+  height: 25px;
+  padding-top: 3px;
+  padding-left: 75px;
+}
+
+#main-footer {
+  background: #bd95e2 !important;
+  margin-top: 25px;
+  min-height: 350px !important;
+  color: #ffffff;
+  padding-top: 60px;
+}
+
+#main-footer {
+  font-weight: bold !important;
+}
+
 #header {
   background: white !important;
 }
@@ -21,6 +41,7 @@
 
 #spree-header {
   background: #ddc2f5 !important;
+  font-size: 15px;
 }
 
 .user-nav > li > a {
@@ -48,6 +69,10 @@
   background: #bd95e2 !important;
 }
 
+.pagination {
+  float: right;
+}
+
 .pagination > li > a {
   color: #bd95e2 !important;
 }
@@ -68,4 +93,33 @@
 
 #logo > a > img {
   max-height: 300px !important;
+}
+
+ul.static-pages-footer {
+  list-style-type: none;
+}
+
+.link-block > a.static-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.block-title {
+  font-weight: bolder;
+  font-size: 20px !important;
+}
+
+#link-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-block {
+  padding-right: 720px;
+  display: inline-grid;
+}
+
+.social-media > a > img {
+  height: 100px;
 }
