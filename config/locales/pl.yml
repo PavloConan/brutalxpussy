@@ -1,3 +1,4 @@
 pl:
   spree:
     login: 'Logowanie / Rejestracja'
+    latest: 'NOWOŚCI'

@@ -7,6 +7,7 @@
 
  *= require_self
  *= require_tree .
+ *= require spree/frontend/spree_static_content
 */
 
 #header {
@@ -21,7 +22,6 @@
 #spree-header {
   background: #ddc2f5 !important;
 }
-
 
 .user-nav > li > a {
   color: #333333 !important;
