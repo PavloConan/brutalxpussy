@@ -15,7 +15,7 @@
   margin-top: 100px;
   height: 25px;
   padding-top: 3px;
-  padding-left: 75px;
+  padding-left: 15px;
 }
 
 #main-footer {
@@ -110,6 +110,11 @@ ul.static-pages-footer {
   font-size: 20px !important;
 }
 
+.block-title > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 #link-blocks {
   display: flex;
   justify-content: space-between;
@@ -122,4 +127,38 @@ ul.static-pages-footer {
 
 .social-media > a > img {
   height: 100px;
+}
+
+.product-title {
+  font-size: 25px;
+}
+
+#breadcrumbs > .breadcrumb {
+  color: #333333 !important;
+}
+
+.item-thumbnail-title {
+  color: #333333;
+}
+
+.price.selling.lead {
+  font-size: 15px;
+}
+
+h1.taxon-title {
+  font-size: 20px;
+}
+
+.list-group-item.active {
+  background: #ddc2f5;
+  border-color: #ddd;
+}
+
+.list-group-item.active:hover {
+  background: #bd95e2;
+  border-color: #ddd;
+}
+
+.breadcrumb > li > span > a {
+  color: #333333;
 }
