@@ -10,6 +10,26 @@
  *= require spree/frontend/spree_static_content
 */
 
+.main-container {
+  min-width: 1200px !important;
+}
+
+.product-body {
+  height: 325px;
+}
+
+.mainbar {
+  padding: 0;
+}
+
+.panel-footer {
+  margin-top: 10px;
+}
+
+#home-link {
+  margin-left: -15px;
+}
+
 .footer-bottom {
   background: #855daa;
   margin-top: 100px;
