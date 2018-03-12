@@ -8,6 +8,7 @@
  *= require_self
  *= require_tree .
  *= require spree/frontend/spree_static_content
+ *= require spree/frontend/spree_hideable_taxons
 */
 
 .main-container {
@@ -20,10 +21,6 @@
 
 .mainbar {
   padding: 0;
-}
-
-.panel-footer {
-  margin-top: 10px;
 }
 
 #home-link {
@@ -41,9 +38,9 @@
 #main-footer {
   background: #bd95e2 !important;
   margin-top: 25px;
-  min-height: 350px !important;
+  min-height: 200px !important;
   color: #ffffff;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 #main-footer {
@@ -122,12 +119,12 @@ ul.static-pages-footer {
 .link-block > a.static-link {
   text-decoration: none;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .block-title {
   font-weight: bolder;
-  font-size: 20px !important;
+  font-size: 15px !important;
 }
 
 .block-title > a {
@@ -146,7 +143,7 @@ ul.static-pages-footer {
 }
 
 .social-media > a > img {
-  height: 100px;
+  height: 50px;
 }
 
 .product-title {
@@ -159,6 +156,7 @@ ul.static-pages-footer {
 
 .item-thumbnail-title {
   color: #333333;
+  margin-top: 15px;
 }
 
 .price.selling.lead {
@@ -181,4 +179,8 @@ h1.taxon-title {
 
 .breadcrumb > li > span > a {
   color: #333333;
+}
+
+.panel-body > a > img {
+  margin-left: -6px;
 }

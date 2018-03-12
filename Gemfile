@@ -13,6 +13,7 @@ gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
 gem 'spree_globalize', github: 'spree-contrib/spree_globalize', branch: 'master'
 gem 'globalize', github: 'globalize/globalize'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+gem 'spree_hideable_taxons', github: 'theam/spree_hideable_taxons', branch: '3-1-stable'
 
 # for setting env variables
 gem 'dotenv-rails'

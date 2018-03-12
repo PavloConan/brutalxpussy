@@ -1,7 +1,9 @@
 <nav class="col-md-12 mainbar">
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
-      <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+      <% if Spree::Taxon.find_by(name: "Strona Główna").present? %>
+        <li><%= link_to I18n.t('spree.main_page'), nested_taxons_path(Spree::Taxon.find_by(name: "Strona Główna")) %></li>
+      <% end %>
       <% if Spree::Taxon.find_by(name: "NOWOŚCI").present? %>
         <li><%= link_to I18n.t('spree.latest'), nested_taxons_path(Spree::Taxon.find_by(name: "NOWOŚCI")) %></li>
       <% end %>
