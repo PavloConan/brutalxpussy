@@ -10,6 +10,9 @@
  *= require spree/frontend/spree_static_content
  *= require spree/frontend/spree_hideable_taxons
 */
+#content.col-sm-12 > h1 {
+  font-size: 20px;
+}
 
 .main-container {
   min-width: 1200px !important;
