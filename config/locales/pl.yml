@@ -12,3 +12,7 @@ pl:
     copyright: 'Brutalxpussy 2018 Wszystkie prawa zaszczerzone'
     variants: 'Wybierz'
     main_page: 'Strona Główna'
+    errors_prohibited_this_record_from_being_saved:
+      one: "Wykryto błędy w formularzu"
+      other: "Wykryto błędy w formularzu"
+      few: "Wykryto błędy w formularzu"
