@@ -14,9 +14,7 @@
 
     <div class="container main-container">
       <div class="row" data-hook>
-        <% if @taxon && @taxon.name != 'Strona Główna' %>
-          <%= breadcrumbs(@taxon) %>
-        <% end %>
+        <%= breadcrumbs(@taxon) %>
 
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
