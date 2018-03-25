@@ -187,3 +187,37 @@ h1.taxon-title {
 .panel-body > a > img {
   margin-left: -6px;
 }
+
+.cart-title {
+  font-size: 20px;
+}
+
+.cart-item-description > h4 > a, .cart-item-price, .cart-item-total, .glyphicon-minus-sign, .continue, #summary-order-total {
+  color: #bd95e2;
+}
+
+.text-primary, .back-to-store {
+  color: #bd95e2;
+}
+
+#update-button {
+  background: #bd95e2 !important;
+  border: solid #bd95e2;
+}
+
+.nav-pills > li > a {
+  color: #bd95e2;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+  background: #bd95e2;
+  color: #ffffff !important;
+}
+
+.edit-order-data > a {
+  color: #bd95e2;
+}
+
+.thank-you {
+  margin-bottom: 10px !important;
+}

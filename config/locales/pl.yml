@@ -8,6 +8,7 @@ pl:
     faq: 'FAQ'
     contact: 'KONTAKT'
     cookies: 'COOKIES'
+    terms: 'POLITYKA PRYWATNOŚCI'
     find_us: 'NASZ INSTA'
     copyright: 'Brutalxpussy 2018 Wszystkie prawa zaszczerzone'
     variants: 'Wybierz'
@@ -16,3 +17,10 @@ pl:
       one: "Wykryto błędy w formularzu"
       other: "Wykryto błędy w formularzu"
       few: "Wykryto błędy w formularzu"
+    qty: 'Ilość'
+    checkout: Złóż zamowienie
+    save_my_address: Zapisz mój adres
+    street_address: 'Adres: ulica i nr domu/mieszkania'
+    street_address_2: 'Adres (c.d.)'
+    thank_you_for_your_order: "Dziękujemy za złożenie zamówienia!</br></br>Twój numer zamówienia to %{number}"
+    guest_user_account: Złóż zamowienie jako gość

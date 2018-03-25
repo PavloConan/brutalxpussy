@@ -9,7 +9,7 @@
             formats: :js,
             locals: { order: @order } %>
 <div data-hook="cart_container">
-  <h1><%= Spree.t(:shopping_cart) %></h1>
+  <h1 class='cart-title'><%= Spree.t(:shopping_cart) %></h1>
 
   <% if @order.line_items.empty? %>
     <div data-hook="empty_cart">

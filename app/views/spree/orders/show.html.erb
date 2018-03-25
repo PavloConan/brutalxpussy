@@ -8,9 +8,11 @@
 <% end %>
 
 <fieldset id="order_summary" data-hook>
-  <h1><%= accurate_title %></h1>
+  <h1><%= "Zamówienie numer #{@order.number}"%></h1>
   <% if order_just_completed?(@order) %>
-    <strong><%= Spree.t(:thank_you_for_your_order) %></strong>
+    <div class='thank-you' %>
+      <strong><%= (I18n.t('spree.thank_you_for_your_order', number: @order.number)).html_safe %></strong>
+    </div>
   <% end %>
 
   <div id="order" data-hook>
@@ -19,7 +21,7 @@
     <br class="clear" />
 
     <p data-hook="links">
-      <%= link_to Spree.t(:back_to_store), spree.root_path, class: "button" %>
+      <%= link_to Spree.t(:back_to_store), spree.root_path, class: "button back-to-store" %>
       <% unless order_just_completed?(@order) %>
         <% if try_spree_current_user && respond_to?(:account_path) %>
           <%= link_to Spree.t(:my_account), account_path, class: "button" %>
