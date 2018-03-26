@@ -37,14 +37,6 @@ GIT
       spree_extension
 
 GIT
-  remote: https://github.com/spree-contrib/spree_mail_settings.git
-  revision: be7a9a9fa866054a81270f15e8e5fb289e80a9d7
-  specs:
-    spree_mail_settings (3.3.0)
-      spree_auth_devise (>= 3.1.0, < 4.0)
-      spree_backend (>= 3.1.0, < 4.0)
-
-GIT
   remote: https://github.com/spree-contrib/spree_static_content.git
   revision: 679c542bee6dd7a605122d38cf83d74bc8594f20
   specs:
@@ -490,7 +482,6 @@ DEPENDENCIES
   spree_globalize!
   spree_hideable_taxons!
   spree_i18n!
-  spree_mail_settings!
   spree_static_content!
   spring
   spring-watcher-listen (~> 2.0.0)
