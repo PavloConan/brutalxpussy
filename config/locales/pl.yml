@@ -24,3 +24,6 @@ pl:
     street_address_2: 'Adres (c.d.)'
     thank_you_for_your_order: "Dziękujemy za złożenie zamówienia!</br></br>Twój numer zamówienia to %{number}"
     guest_user_account: Złóż zamowienie jako gość
+    shipping_total: Koszt wysyłki
+    item_total: Produkty razem
+    order_processed_successfully: Twoje zamówienie zostało złożone ♡

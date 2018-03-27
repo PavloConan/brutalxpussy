@@ -10,6 +10,16 @@
  *= require spree/frontend/spree_static_content
  *= require spree/frontend/spree_hideable_taxons
 */
+
+.line-item > .cart-item-description {
+  width: 50%;
+}
+
+.panel-body > .text-center > a {
+  color: #855daa;
+  text-decoration: none;
+}
+
 #content.col-sm-12 > h1 {
   font-size: 20px;
 }
