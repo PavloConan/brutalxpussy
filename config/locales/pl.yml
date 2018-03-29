@@ -22,8 +22,22 @@ pl:
     save_my_address: Zapisz mój adres
     street_address: 'Adres: ulica i nr domu/mieszkania'
     street_address_2: 'Adres (c.d.)'
-    thank_you_for_your_order: "Dziękujemy za złożenie zamówienia!</br></br>Twój numer zamówienia to %{number}"
+    thank_you_for_your_order: "Dziękujemy za złożenie zamówienia!</br></br>Twój numer zamówienia to %{number}
+      </br></br>Aby zapłacić za zamówienie prosimy o zrobienie przelewu na nasze konto:
+      </br></br>50 1020 5558 1111 1628 8970 0086
+      </br></br>SKLEP BXP
+      </br>ul. Boboli 93/56
+      </br>15-649 Białystok
+      </br></br>W tytule przelewu prosimy o wpisanie numeru zamówienia.
+      </br></br>O zmianie statusu Twojego zamówienia będziemy Cię informować mailowo.
+      </br></br>Potwierdzenie przyjęcia zamówienia i dane do przelewu zostały wysłane na adres: %{email}
+      </br>Jeśli nie widzisz naszego maila, sprawdź folder SPAM na swojej poczcie.
+      </br></br>Dziękujemy i zapraszamy ponownie!
+      </br></br>BxP Creepy Crew
+      </br></br>"
     guest_user_account: Złóż zamowienie jako gość
     shipping_total: Koszt wysyłki
     item_total: Produkty razem
     order_processed_successfully: Twoje zamówienie zostało złożone ♡
+    order_mailer:
+      total: 'RAZEM'

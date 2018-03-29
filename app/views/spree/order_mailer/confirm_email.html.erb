@@ -1,0 +1,113 @@
+<table class="row header">
+  <tr>
+    <td>
+      <p class="lede">
+        <%= 'Dziękujemy za złożenie zamówienia!' %>
+      </p>
+      <p class='mtop25'>
+        <%= "Twój numer zamówienia: "%><span class='strong'><%= "#{@order.number}" %></span>
+      </p>
+      <p class='mtop25'>
+        <%= "Sposób dostawy: #{@order.shipments.first.selected_shipping_rate.name}" %>
+      </p>
+      <p>
+        <%= "Sposób płatności: #{@order.payments.first.payment_method.name}" %>
+      </p>
+      <p class="mtop25">
+        <%= "Szczegóły zamówienia:" %>
+      </p>
+      <table class="container">
+        <tr>
+          <td class="wrapper last">
+            <table class="twelve columns">
+              <%= render collection: @order.line_items, partial: 'spree/shared/mailer_line_item', as: :line_item %>
+              <% if @order.line_item_adjustments.exists? %>
+                <% if @order.all_adjustments.promotion.eligible.exists? %>
+                  <% @order.all_adjustments.promotion.eligible.group_by(&:label).each do |label, adjustments| %>
+                    <tr>
+                      <td class="six sub-columns">
+                        <%= Spree.t(:promotion) %> <%= label %>:
+                      </td>
+                      <td class="six sub-columns last right">
+                        <%= Spree::Money.new(adjustments.sum(&:amount), currency: @order.currency) %>
+                      </td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              <% end %>
+              <% @order.shipments.group_by { |s| s.selected_shipping_rate.try(:name) }.each do |name, shipments| %>
+                <tr>
+                  <td class="six sub-columns">
+                    <%= Spree.t(:shipping) %>:
+                  </td>
+                  <td class="six sub-columns last right">
+                    <%= Spree::Money.new(shipments.sum(&:discounted_cost), currency: @order.currency) %>
+                  </td>
+                </tr>
+              <% end %>
+              <% if @order.all_adjustments.eligible.tax.exists? %>
+                <% @order.all_adjustments.eligible.tax.group_by(&:label).each do |label, adjustments| %>
+                  <tr>
+                    <td class="six sub-columns">
+                      <%= Spree.t(:tax) %> <%= label %>:
+                    </td>
+                    <td class="six sub-columns last right">
+                      <%= Spree::Money.new(adjustments.sum(&:amount), currency: @order.currency) %>
+                    </td>
+                  </tr>
+                <% end %>
+              <% end %>
+              <% @order.adjustments.eligible.each do |adjustment| %>
+                <% next if (adjustment.source_type == 'Spree::TaxRate') || (adjustment.amount == 0) %>
+                <%= render 'spree/order_mailer/adjustment', adjustment: adjustment %>
+              <% end %>
+              <%= render 'spree/order_mailer/total', order: @order %>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <p>
+        <%= "Numer konta do wpłaty:" %>
+      </p>
+      <p>
+        <span class='strong'><%= "50 1020 5558 1111 1628 8970 0086" %></span>
+      </p>
+      <p class='mtop25'>
+        <%= "Dane odbiorcy przelewu:" %>
+      </p>
+      <p>
+        <%= simple_format "SKLEP BXP\nul. Boboli 93/56\n15-649 Białystok"%>
+      </p>
+      <p>
+        <%= "Kwota do zapłaty: #{@order.display_total}" %>
+      </p>
+      <p>
+        <%= "Tytuł przelewu: Zamówienie #{@order.number}" %>
+      </p>
+      <p class="mtop25">
+        <%= "Przesyłka zostanie wysłana na adres:" %>
+      </p>
+      <p>
+        <%="#{@order.shipments.first.address.firstname} #{@order.shipments.first.address.lastname}"%>
+      </p>
+      <p>
+        <%="#{@order.shipments.first.address.address1}"%>
+      </p>
+      <% unless @order.shipments.first.address.address2.blank? %>
+        <p>
+          <%="#{@order.shipments.first.address.address2}"%>
+        </p>
+      <% end %>
+      <p>
+        <%="#{@order.shipments.first.address.zipcode} #{@order.shipments.first.address.city}"%>
+      </p>
+      <p class='mtop25'>
+        <%="Jeśli masz jakieś pytania lub chcesz coś zmienić, daj znać!" %>
+      </p>
+      <p class='mtop25'>
+        <%="Sklep Brutal X Pussy" %>
+      </p>
+    </td>
+    <td class="expander"></td>
+  </tr>
+</table>
