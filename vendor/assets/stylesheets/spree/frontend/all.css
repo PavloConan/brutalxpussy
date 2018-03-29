@@ -202,8 +202,12 @@ h1.taxon-title {
   font-size: 20px;
 }
 
-.cart-item-description > h4 > a, .cart-item-price, .cart-item-total, .glyphicon-minus-sign, .continue, #summary-order-total {
+.cart-item-price, .cart-item-total, .glyphicon-minus-sign, .continue, #summary-order-total {
   color: #bd95e2;
+}
+
+.cart-item-description > h4 > a {
+  color: #333333;
 }
 
 .text-primary, .back-to-store {
