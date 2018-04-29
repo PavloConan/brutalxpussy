@@ -14,6 +14,7 @@ gem 'spree_globalize', github: 'spree-contrib/spree_globalize', branch: 'master'
 gem 'globalize', github: 'globalize/globalize'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 gem 'spree_hideable_taxons', github: 'theam/spree_hideable_taxons', branch: '3-1-stable'
+gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
 # gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 
 # for setting env variables

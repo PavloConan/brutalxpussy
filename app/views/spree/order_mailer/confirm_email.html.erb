@@ -66,24 +66,26 @@
           </td>
         </tr>
       </table>
-      <p>
-        <%= "Numer konta do wpłaty:" %>
-      </p>
-      <p>
-        <span class='strong'><%= "50 1020 5558 1111 1628 8970 0086" %></span>
-      </p>
-      <p class='mtop25'>
-        <%= "Dane odbiorcy przelewu:" %>
-      </p>
-      <p>
-        <%= simple_format "SKLEP BXP\nul. Boboli 93/56\n15-649 Białystok"%>
-      </p>
-      <p>
-        <%= "Kwota do zapłaty: #{@order.display_total}" %>
-      </p>
-      <p>
-        <%= "Tytuł przelewu: Zamówienie #{@order.number}" %>
-      </p>
+      <% unless @order.payments.where(state: 'completed', source_type: 'Spree::PaypalExpressCheckout').exists? %>
+        <p>
+          <%= "Numer konta do wpłaty:" %>
+        </p>
+        <p>
+          <span class='strong'><%= "50 1020 5558 1111 1628 8970 0086" %></span>
+        </p>
+        <p class='mtop25'>
+          <%= "Dane odbiorcy przelewu:" %>
+        </p>
+        <p>
+          <%= simple_format "SKLEP BXP\nul. Boboli 93/56\n15-649 Białystok"%>
+        </p>
+        <p>
+          <%= "Kwota do zapłaty: #{@order.display_total}" %>
+        </p>
+        <p>
+          <%= "Tytuł przelewu: Zamówienie #{@order.number}" %>
+        </p>
+      <% end %>
       <p class="mtop25">
         <%= "Przesyłka zostanie wysłana na adres:" %>
       </p>

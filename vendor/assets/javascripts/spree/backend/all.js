@@ -12,3 +12,4 @@
 //= require spree/backend/spree_i18n
 //= require spree/backend/spree_globalize
 //= require spree/backend/spree_hideable_taxons
+//= require spree/backend/spree_paypal_express

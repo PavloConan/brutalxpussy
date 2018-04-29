@@ -9,6 +9,7 @@
  *= require_tree .
  *= require spree/frontend/spree_static_content
  *= require spree/frontend/spree_hideable_taxons
+ *= require spree/frontend/spree_paypal_express
 */
 
 .line-item > .cart-item-description {
